@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery `getJSON()` Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    #content {
+      margin: 20px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      background-color: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>jQuery `getJSON()` Example</h1>
+    <button id="loadJSON">Load JSON Content</button>
+    <div id="content"></div>
+  </div>
+
+  <!-- Include jQuery library from CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#loadJSON').click(function() {
+        $.getJSON('data.json', function(data) { // Ensure 'data.json' is in the correct directory
+          $('#content').html('<pre>' + JSON.stringify(data, null, 2) + '</pre>');
+        }).fail(function() {
+          $('#content').text('Failed to Load JSON File');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

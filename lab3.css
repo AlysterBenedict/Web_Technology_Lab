@@ -1,0 +1,60 @@
+/* Tag Selector for h2 */
+h2 {
+    color: #2c3e50; /* Dark blue */
+    font-family: 'Arial', sans-serif; /* Arial font */
+    border-bottom: 2px solid #3498db; /* Blue border */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+/* Tag Selector for h3 */
+h3 {
+    color: #2980b9; /* Lighter blue */
+    font-family: 'Verdana', sans-serif; /* Verdana font */
+    margin: 15px 0; /* Margin above and below */
+}
+/* Universal Selector for hr */
+hr {
+    border: 0;
+    border-top: 2px solid #bdc3c7; /* Light gray top border */
+    margin: 20px 0; /* Margin above and below */
+}
+/* Tag Selector for p */
+p {
+    color: #34495e; /* Grayish-blue */
+    font-size: 1em; /* Regular font size */
+    line-height: 1.5; /* Line height */
+}
+/* Class Selector for div */
+.div-style {
+    background-color: #f9ebc3; /* Light yellow */
+    padding: 15px; /* Padding inside div */
+    border-radius: 5px; /* Rounded corners */
+}
+/* Tag Selector for span */
+span {
+    color: #16a085; /* Teal color */
+    font-style: italic; /* Italic */
+}
+/* Tag Selector for time */
+time {
+    font-family: 'Courier New', monospace; /* Monospace font */
+    color: #9b59b6; /* Purple */
+    display: block; /* Block display */
+    margin: 10px 0; /* Margin above and below */
+}
+/* Class Selector for img */
+img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+}
+/* Attribute Selector for a */
+a {
+    color: #2980b9; /* Blue color */
+    text-decoration: none; /* No underline */
+}
+/* Pseudo-class Selector for a:hover */
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #3498db; /* Change color on hover */
+}
